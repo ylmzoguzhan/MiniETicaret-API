@@ -5,19 +5,19 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5876A9E9-E641-4465-AA66-55722CC1C818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretAPI.Domain", "Core\ETicaretAPI.Domain\ETicaretAPI.Domain.csproj", "{8AF3DDEA-3B2A-4C25-9628-4CD06116A66E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretAPI.Domain", "Core\ETicaretAPI.Domain\ETicaretAPI.Domain.csproj", "{8AF3DDEA-3B2A-4C25-9628-4CD06116A66E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretAPI.Application", "Core\ETicaretAPI.Application\ETicaretAPI.Application.csproj", "{E9F5D9E0-3129-4D00-AFCF-033D4D87CA3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretAPI.Application", "Core\ETicaretAPI.Application\ETicaretAPI.Application.csproj", "{E9F5D9E0-3129-4D00-AFCF-033D4D87CA3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EDF9A826-3BD1-4F77-BF04-58289877FCF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretAPI.Infrastructure", "Infrastructure\ETicaretAPI.Infrastructure\ETicaretAPI.Infrastructure.csproj", "{5789471F-AADA-4EC4-A242-9D8A789664F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretAPI.Infrastructure", "Infrastructure\ETicaretAPI.Infrastructure\ETicaretAPI.Infrastructure.csproj", "{5789471F-AADA-4EC4-A242-9D8A789664F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretAPI.Persistence", "Infrastructure\ETicaretAPI.Persistence\ETicaretAPI.Persistence.csproj", "{C892C50A-E6E7-4699-B558-7823336C9D10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretAPI.Persistence", "Infrastructure\ETicaretAPI.Persistence\ETicaretAPI.Persistence.csproj", "{C892C50A-E6E7-4699-B558-7823336C9D10}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{92533FC1-340F-40CC-AFC5-D0030EB1ED7A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D4C13554-B0A1-40ED-A637-5366119DA668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETİcaretAPI.API", "Presentation\ETİcaretAPI.API\ETİcaretAPI.API.csproj", "{B72B9A51-3D14-4119-AE9F-6367D61F3D21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretAPI.API", "Presentation\ETicaretAPI.API\ETicaretAPI.API.csproj", "{9F81F80F-4F75-4EBC-94B9-C4E921D94151}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{C892C50A-E6E7-4699-B558-7823336C9D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C892C50A-E6E7-4699-B558-7823336C9D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C892C50A-E6E7-4699-B558-7823336C9D10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B72B9A51-3D14-4119-AE9F-6367D61F3D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B72B9A51-3D14-4119-AE9F-6367D61F3D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B72B9A51-3D14-4119-AE9F-6367D61F3D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B72B9A51-3D14-4119-AE9F-6367D61F3D21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F81F80F-4F75-4EBC-94B9-C4E921D94151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F81F80F-4F75-4EBC-94B9-C4E921D94151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F81F80F-4F75-4EBC-94B9-C4E921D94151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F81F80F-4F75-4EBC-94B9-C4E921D94151}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,7 +54,7 @@ Global
 		{E9F5D9E0-3129-4D00-AFCF-033D4D87CA3E} = {5876A9E9-E641-4465-AA66-55722CC1C818}
 		{5789471F-AADA-4EC4-A242-9D8A789664F7} = {EDF9A826-3BD1-4F77-BF04-58289877FCF4}
 		{C892C50A-E6E7-4699-B558-7823336C9D10} = {EDF9A826-3BD1-4F77-BF04-58289877FCF4}
-		{B72B9A51-3D14-4119-AE9F-6367D61F3D21} = {92533FC1-340F-40CC-AFC5-D0030EB1ED7A}
+		{9F81F80F-4F75-4EBC-94B9-C4E921D94151} = {D4C13554-B0A1-40ED-A637-5366119DA668}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A9AD7D8-26DD-4B4A-AB98-44CD95FE04D4}
