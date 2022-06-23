@@ -12,46 +12,26 @@ namespace ETicaretAPI.API.Controllers
         readonly private IProductWriteRepository _productWriteRepository;
         readonly private IProductReadRepository _productReadRepository;
 
-        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
+        
+        readonly private ICustomerWriteRepository _customerWriteRepository;
+
+        readonly IOrderReadRepository _orderReadRepository;
+        readonly private IOrderWriteRepository _orderWriteRepository;
+        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository, IOrderReadRepository orderReadRepository)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
+            _orderWriteRepository = orderWriteRepository;
+            _orderReadRepository = orderReadRepository;
+            _customerWriteRepository = customerWriteRepository;
         }
 
         [HttpGet]
         public async Task Get()
         {
-            //await _productWriteRepository.AddRangeAsync(new() 
-            // {
-            //     new()
-            //     {
-            //         Id = Guid.NewGuid(),
-            //         Name = "Product 1",
-            //         Price = 100,
-            //         CreatedDate = DateTime.Now,
-            //         Stock = 10
-            //     },
-            //     new()
-            //     {
-            //         Id = Guid.NewGuid(),
-            //         Name = "Product 2",
-            //         Price = 200,
-            //         CreatedDate = DateTime.Now,
-            //         Stock = 20
-            //     },
-            //     new()
-            //     {
-            //         Id = Guid.NewGuid(),
-            //         Name = "Product 3",
-            //         Price = 300,
-            //         CreatedDate = DateTime.Now,
-            //         Stock = 30
-            //     },
-            // });
-            //await _productWriteRepository.SaveAsync();
-            Product p = await _productReadRepository.GetByIdAsync("3D3AB9F8-94C5-4488-9CA7-0AEB59625985",false);
-            p.Name = "degisti";
-            await _productWriteRepository.SaveAsync();
+            Order order = await _orderReadRepository.GetByIdAsync("B633A3CF-5809-4B60-B5B0-08DA54D2A2F7");
+            order.Address = "İstanbul";
+            await _orderWriteRepository.SaveAsync();
         }
     }
 }
